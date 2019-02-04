@@ -1,0 +1,32 @@
+/* asset/css/my_css.css */
+
+/*element selection*/
+h1 {
+    color: blue;
+    margin: 15%;
+    
+}
+
+h2 {
+    color: olive;
+    font-family:Times New Roman;
+    font-variant: inherit;
+    
+}
+
+/*class selection*/
+.c_head1{
+    font-family: cursive;
+    color: orange;
+}
+
+
+/*id selection*/
+#i_head2{
+    font-variant: small-caps;
+    color: red;
+}
+
+* {
+    color: salmon;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Molhamson</title>
+    <link rel="stylesheet" type="text/css" href="Molhamson.css">
+</head>
+
+<body>
+    <center>
+        <h1 > Welcome to Molhamson's website!</h1>
+        <p class="c_head1">This is a website that links famous people and companies for mututal benefits.</p>
+
+        <h2> If you are interested sign up! </h2>
+        <p id="i_head2"> signing up is completely free! </p>
+    </center>
+
+    <hr>
+    <div style="color:rgb(207, 29, 29);">
+
+        <p> This paragraph is inside the 'div' tag </p>
+
+    </div>
+
+    horizontal line is drawn using two 'hr' tag.
+    <hr>
+
+    <pre> 'pre' tag preserve the formatting (good for writing codes)
+
+          # Python code
+            x = 2
+            y = 3
+            print(x+y)
+
+    </pre>
+    <hr>
+
+    <table border="1" bordercolor="black" width="450" height="100">
+        <caption style="font-style: italic;font-size: small">Table 1 : Various tags of table</caption>
+        <tr bgcolor="red">
+            <!-- row -->
+            <th rowspan="3">Column 0 </th>
+            <th>Column 1 </th> <!-- header -->
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+
+        <tr bgcolor="cyan">
+            <!-- background color -->
+            <td align="center">Data 1</td> <!-- data -->
+            <td align="center">Data 2</td>
+            <td align="center">Data 3</td>
+        </tr>
+
+        <tr bgcolor="yellow">
+            <!-- row -->
+            <td align="center" colspan="2">New Data 1</td> <!-- column span -->
+            <td align="center">New Data 2</td> <!-- data -->
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <!-- width in % -->
+    <table border="1" bordercolor="black" width="450" height="50">
+        <caption style="font-size: small"> Table 2 : Width is 450</caption>
+        <tr bgcolor="red">
+            <th> <sup>Column 1</sup></th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+
+        <tr bgcolor="cyan">
+            <!-- row -->
+            <td>Data 1</td> <!-- data -->
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+
+    </table>
+    <br>
+    <hr>
+    <!-- Images -->
+    <br>
+    <br>
+    <br>
+
+    <img src="ship.jpg" alt="building picture" width="50%" height="50%" />
+
+    <br /> <br />
+
+    <img src="building.jpg" alt="Missing Logo.jpg" width="20%" />
+
+    <hr>
+
+    <!-- Lists -->
+    <!-- unordered list -->
+    <ul> Unordered List - type: disc
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li>Eraser</li>
+    </ul>
+
+    <ul type="circle"> Change bullets : 'square', 'circle' or 'disc'
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li>Eraser</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol> Ordered List
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li>Eraser</li>
+    </ol>
+
+    <ol type='i'> Change style : 'i', 'I', '1', 'a' or 'A'
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li>Eraser</li>
+    </ol>
+
+    <ol type='i' start="5"> Start from 'v'
+        <li>Pen</li>
+        <li>Pencil</li>
+        <li>Eraser</li>
+    </ol>
+
+    <!-- Definition list -->
+    <dl>
+        <dt>
+            <h4>HTML Definition List</h4>
+        </dt>
+        <dd> HTML is easy </dd>
+        <dd> HTML is good </dd>
+    </dl>
+    <hr>
+
+    <!-- links -->
+    <p>Go to paragraph with<a href="#para1"> id='para1'</a></p>
+    <a href="http://pythondsp.readthedocs.io"> PythonDSP </a>
+
+    <br>
+    <p><a href="js.html" target="_self"> JavaScript Tutorial</a> in same window.</p>
+    <p><a href="js.html" target="_blank"> JavaScript Tutorial</a> in new Window.</p>
+
+    <p><a href="http://pythondsp.readthedocs.io/pdf" target="_blank">Download PDF, DOC or Zip Files</a></p>
+
+
+    <p><a href="mailto:aldrobi.omar@gmail.com">Email me</a></p>
+    <p><a href="mailto:aldrobi.omar@gmail.com?subject=Feedback&body=Your feedback here">Feeback email</a></p>
+
+    <hr>
+
+    <!-- Forms -->
+    <form>
+        <h4>Text input </h4>
+        Name : <input type="text" name="user_name" size="30" value="eg.omar" maxlength="10"><br>
+        Password : <input type="password" name="user_pass"><br>
+
+
+        <h4> Radio button: name should be same</h4>
+        <input type="radio" name="r_gender"> Male
+        <input type="radio" name="r_gender"> Female
+        <input type="radio" name="r_gender" checked> Infant
+
+        <h4> Check box : name should be different</h4>
+        <input type="checkbox" name="c_male" checked> Male
+        <input type="checkbox" name="c_female"> Female
+        <input type="checkbox" name="c_infant"> Infant
+
+        <h4> Select box : drop-down</h4>
+        <select name="s_box">
+            <option value="s_male">Male</option>
+            <option value="s_female" selected>Female</option>
+            <option value="s_infant">Infant</option>
+        </select>
+
+        <h4> Select box : scroll - can select multiple</h4>
+        <select name="s_box" size="6" multiple>
+            <option value="s_male" selected>Male</option>
+            <option value="s_female" selected>Female</option>
+            <option value="s_infant">Infant 1</option>
+            <option value="s_infant" selected>Infant 2</option>
+            <option value="s_infant">Infant 3</option>
+            <option value="s_infant">Infant 4</option>
+        </select>
+
+        <h4> Text area</h4>
+        <textarea rows="5" cols="50" name="txt_area">
+
+        Initial Text
+        x = 2
+        y = 3
+        </textarea> <!-- formatting work as pre -->
+
+        <!-- Button and Hidden-->
+        <form method="get|post" action="jquery.html">
+            <h4> Buttons and Hidden</h4>
+
+            Name : <input type="text" name="user_name" size="4" value="Meher" maxlength="16"><br>
+            Password : <input type="password" name="user_pass"><br>
+
+            <input type="button" onclick="alert('Hello')" name="b_alert" value="Say Hello" /><br>
+            <input type="submit" name="b_submit" value="Go to jQuery" />
+            <input type="reset" name="b_reset" value="Reset" /><br>
+
+            <input type="hidden" name="h_data" value="html_tutorial">
+        </form>
+
+    </form>
+
+    <hr>
+
+    <h2 style="color:blue"> Basic form </h2>
+    <div class="row">
+        <div class="col-sm-5" style="background: azure">
+            <div class="panel-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input id="exampleInputFile" type="file">
+                        <p class="help-block">Example block-level help text here.</p>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</body>
+
+</html>
