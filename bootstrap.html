@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <h3>Example heading <span class="label label-info">New</span></h3>
+    <hr>
+
+    <h3> Buttons </h3>
+    <button type="button" class="btn btn-primary">Sign in</button>
+    <button type="button" class="btn btn-danger"> Delete <span class="glyphicon glyphicon-trash"><span></button>
+    <button type="submit" class="btn btn-lg btn-success">Submit</button>
+    <button type="submit" class="btn btn-md btn-success">Submit</button>
+    <button type="submit" class="btn btn-sm btn-success">Submit</button>
+    <hr>
+
+
+    <!-- model form -->
+    <h3> Modal form </h3>
+
+    <div class="row">
+        <div class="col-sm-5" style="background: pink">
+            <div class="panel-body">
+                <!-- button to generate model form -->
+                <a href="#myModal" data-toggle="modal" class="btn btn-xs btn-success">
+                    Form in Modal
+                </a>
+
+                <!-- model form settings-->
+
+                <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
+                                <h4 class="modal-title">Form Tittle</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <!-- actual form  -->
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input class="form-control" id="exampleInputEmail3" placeholder="Enter email"
+                                            type="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input class="form-control" id="exampleInputPassword3" placeholder="Password"
+                                            type="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputFile">File input</label>
+                                        <input id="exampleInputFile3" type="file">
+                                        <p class="help-block">Example block-level help text here.</p>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> Check me out
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                                <!-- actual form ends -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Form elements  -->
+    <h3> Form elements </h3>
+    <div class="row">
+        <div class="col-sm-6" style="background: pink">
+            <div class="panel-body">
+                <form class="form-horizontal tasi-form" method="get">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Default</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Help text</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text">
+                            <span class="help-block">A block of help text that breaks onto a new line and may extend
+                                beyond one line.</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Rounder</label>
+                        <div class="col-sm-10">
+                            <input class="form-control round-input" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Input focus</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" id="focusedInput" value="This is focused..." type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Disabled</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" id="disabledInput" placeholder="Disabled input here..."
+                                disabled="disabled" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Placeholder</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" placeholder="placeholder" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" placeholder="" type="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 col-sm-2 control-label">Static control</label>
+                        <div class="col-lg-10">
+                            <p class="form-control-static">email@example.com</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Input groups -->
+    <h3>Input groups</h3>
+    <div class="row">
+        <div class="col-sm-12" style="background: pink">
+            <div class="panel-body">
+                <form class="form-horizontal tasi-form" method="get">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label col-lg-2">Basic examples</label>
+                        <div class="col-lg-10">
+                            <div class="input-group m-bot15">
+                                <span class="input-group-addon">@</span>
+                                <input class="form-control" placeholder="Username" type="text">
+                            </div>
+
+                            <div class="input-group m-bot15">
+                                <input class="form-control" type="text">
+                                <span class="input-group-addon">.00</span>
+                            </div>
+
+                            <div class="input-group m-bot15">
+                                <span class="input-group-addon">$</span>
+                                <input class="form-control" type="text">
+                                <span class="input-group-addon">.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label col-lg-2">Sizing</label>
+                        <div class="col-lg-10">
+                            <div class="input-group input-group-lg m-bot15">
+                                <span class="input-group-addon">@</span>
+                                <input class="form-control input-lg" placeholder="Username" type="text">
+                            </div>
+
+                            <div class="input-group m-bot15">
+                                <span class="input-group-addon">@</span>
+                                <input class="form-control" placeholder="Username" type="text">
+                            </div>
+
+                            <div class="input-group input-group-sm m-bot15">
+                                <span class="input-group-addon">@</span>
+                                <input class="form-control" placeholder="Username" type="text">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label col-lg-2">Checkboxe and radio</label>
+                        <div class="col-lg-10">
+                            <div class="input-group m-bot15">
+                                <span class="input-group-addon">
+                                    <input type="checkbox">
+                                </span>
+                                <input class="form-control" type="text">
+                            </div>
+
+                            <div class="input-group m-bot15">
+                                <span class="input-group-addon">
+                                    <input type="radio">
+                                </span>
+                                <input class="form-control" type="text">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label col-lg-2">Button addons</label>
+                        <div class="col-lg-10">
+                            <div class="input-group m-bot15">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-white" type="button">Go!</button>
+                                </span>
+                                <input class="form-control" type="text">
+                            </div>
+
+                            <div class="input-group m-bot15">
+                                <input class="form-control" type="text">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-white" type="button">Go!</button>
+                                </span>
+                            </div>
+
+                            <div class="input-group m-bot15">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown">Action
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <input class="form-control" type="text">
+                            </div>
+                            <div class="input-group m-bot15">
+                                <input class="form-control" type="text">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown">Action
+                                        <span class="caret"></span></button>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label col-lg-2">Segmented buttons</label>
+                        <div class="col-lg-10">
+                            <div class="input-group m-bot15">
+                                <div class="input-group-btn">
+                                    <button tabindex="-1" class="btn btn-white" type="button">Action</button>
+                                    <button tabindex="-1" data-toggle="dropdown" class="btn btn-white dropdown-toggle"
+                                        type="button">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                                <input class="form-control" type="text">
+                            </div>
+
+                            <div class="input-group m-bot15">
+                                <input class="form-control" type="text">
+                                <div class="input-group-btn">
+                                    <button tabindex="-1" class="btn btn-white" type="button">Action</button>
+                                    <button tabindex="-1" data-toggle="dropdown" class="btn btn-white dropdown-toggle"
+                                        type="button">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul role="menu" class="dropdown-menu pull-right">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:black" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hidden-sm" href="http://pythondsp.readthedocs.io/" target="_blank">PythonDSP</a>
+            </div>
+            <div class="row">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="basic.html">HTML</a></li>
+                        <li><a href="css.html">CSS</a></li>
+
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="bootstrap.html">Bootstrap</a></li>
+                                <li><a href="js.html">Javascript</a></li>
+                                <li><a href="jquery.html">jQuery</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>

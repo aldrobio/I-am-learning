@@ -4,11 +4,13 @@
 <head>
     <title>Molhamson</title>
     <link rel="stylesheet" type="text/css" href="Molhamson.css">
+    <link rel="stylesheet" type="text/js" href="Molhamson.js">
 </head>
 
 <body>
+
     <center>
-        <h1 > Welcome to Molhamson's website!</h1>
+        <h1> Welcome to Molhamson's website!</h1>
         <p class="c_head1">This is a website that links famous people and companies for mututal benefits.</p>
 
         <h2> If you are interested sign up! </h2>
@@ -242,6 +244,25 @@
         </div>
     </div>
     <br><br>
+
+    <p id='p_name'></p>
+
+
+    <script src="Molhamson.js"></script>
+
+    <br>
+    <br>
+
+    <!-- “JavaScript:void(0)” is used here, which does not refresh the page. -->
+    <a href="JavaScript:void(0)" , onclick="alert('Hello')">Say Hello</a><br> <!-- do not reload the page -->
+
+    <a href="" , onclick="alert('Hello')">Say Bye</a><br> <!-- reload the page -->
+
+    <a href="JavaScript:void(0)" , onclick="alertMessage('Bye via function')">Bye-function</a><br>
+
+    <a href="JavaScript:void(0)" , onmouseover="this.style.color='red'" , onmouseleave="this.style.color='blue'" ,
+        onmouseup="this.text='Not clicked'" , onmousedown="this.text='You clicked me'"> Not clicked
+    </a><br>
 </body>
 
 </html>
